@@ -82,6 +82,26 @@ export const base = {
         opacity: 0.4
       }
     },
+    secondary: {
+      cursor: 'pointer',
+      color: 'background',
+      marginLeft: '10px',
+      bg: 'red',
+      ':focus': {
+        boxShadow: "0 0 0px 1px #fff, 0 0 0px 4px #61CECE",
+        outline: 'none'
+      },
+      ':hover': {
+        boxShadow: "0 20px 60px -5px rgba(0,0,0,0.38)",
+      },
+      ':active': {
+        boxShadow: 'none'
+      },
+
+      '[disabled]': {
+        opacity: 0.4
+      }
+    },
   },
   text: {
     paragraph: {

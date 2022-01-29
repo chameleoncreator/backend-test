@@ -60,12 +60,11 @@ export const App = () => {
       redirect: 'follow',
       referrerPolicy: 'no-referrer',
     })
-      .then(r => r.json)
+      .then(r => r.json())
       .then((todo: any) => {
         setTodos((s) => {
           let t = s.find((v) => v.id === todo.id)
-          let i = s.indexOf(t);
-          return s.slice(i)
+          return s.filter((a) => a.id !== todo.id)
         })
       })
   }
@@ -139,6 +138,7 @@ export const App = () => {
                       completeTodo(t, e.target.checked)
                     }} />
                     <Text as="span" sx={{ fontFamily: 'body' }}>{t.content}</Text>
+                    <Button variant="secondary" key={t.id} onClick={() => deleteTodo(t)}>Delete</Button>
                   </Flex>
 
                 </Flex>
