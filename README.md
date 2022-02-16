@@ -27,7 +27,7 @@ Read through the app and get an understanding of how its setup
 
 Jot down 2 - 3 points that you like about it, or has been done well, and why
 
-Jot down 2 - 3 points about what you would do to move the app forward without adding any new features and why. 
+Jot down 2 - 3 points about what you would do to move the app forward and improve code quality. 
 
 ## Part 2. 
 
